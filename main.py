@@ -7,7 +7,7 @@ app = FastAPI()
 #AUTENTIKASI
 
 
-#MENU
+#Bagian MENU
 @app.get('/')
 def root():
     return{'MENU':'NAMA MENU'}
