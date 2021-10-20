@@ -3,16 +3,16 @@
 #NIM        : 18219069
 #DESKRIPSI  : File main.py API untuk operasi Authentication, Update, Delete, dan Add Menu.
 
+#FROM & IMPORT STATEMENT
 from datetime import datetime, timedelta
 from typing import Optional
-
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 from pydantic import BaseModel
 
-#Bagian MENU 1
+#Daftar Menu .json
 import json
 with open("menu.json", "r") as read_file:
     data = json.load(read_file)
