@@ -16,6 +16,8 @@ from pydantic import BaseModel
 import json
 with open("menu.json", "r") as read_file:
     data = json.load(read_file)
+
+#Objek Dibuat
 app = FastAPI()
 
 #AUTENTIKASI
