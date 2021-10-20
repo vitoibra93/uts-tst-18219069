@@ -21,7 +21,7 @@ with open("menu.json", "r") as read_file:
 app = FastAPI()
 
 #AUTENTIKASI
-# untuk mendapatkan string seperti di bawah ini run di terminal:
+# untuk mendapatkan string seperti di bawah ini run perintah di terminal:
 # openssl rand -hex 32
 SECRET_KEY = "fd317678802c480202cdfe85c0fd9243d9b254397bc9dd57c65342b64fb12b4a"
 ALGORITHM = "HS256"
@@ -204,4 +204,3 @@ async def update_menu(item_id: int, name:str):
     raise HTTPException(
         status_code=404, detail=f'Item not found'
     )
-
