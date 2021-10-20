@@ -1,3 +1,8 @@
+#IDENTITAS
+#NAMA       : Muhammad Vito Ibrahim
+#NIM        : 18219069
+#DESKRIPSI  : File main.py API untuk operasi Authentication, Update, Delete, dan Add Menu.
+
 import json
 from fastapi import FastAPI, HTTPException
 with open("menu.json", "r") as read_file:
