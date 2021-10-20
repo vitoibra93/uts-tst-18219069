@@ -8,6 +8,7 @@ app = FastAPI()
 def root():
     return{'MENU':'NAMA MENU'}
 
+#Membaca Menu
 @app.get('/menu/{item_id}')
 async def read_menu(item_id: int) :
     for menu_item in data['menu']:
