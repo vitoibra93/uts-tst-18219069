@@ -15,3 +15,5 @@ pip install "passlib[bcrypt]"
 
 4. Pada terminal masukkan perintah *bash run.sh* maka akan dilakukan 
 uvicorn main:app --reload
+
+Username dan Password untuk Authorize adalah asdf
