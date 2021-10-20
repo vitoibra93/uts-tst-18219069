@@ -4,6 +4,10 @@ with open("menu.json", "r") as read_file:
     data = json.load(read_file)
 app = FastAPI()
 
+#AUTENTIKASI
+
+
+#MENU
 @app.get('/')
 def root():
     return{'MENU':'NAMA MENU'}
@@ -66,3 +70,4 @@ async def update_menu(item_id: int, name:str):
     raise HTTPException(
         status_code=404, detail=f'Item not found'
     )
+
