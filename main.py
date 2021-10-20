@@ -18,6 +18,7 @@ async def read_menu(item_id: int) :
         status_code= 404, detail=f'Item not found'
     )
 
+#Menambah Menu
 @app.post('/menu')
 async def add_menu(name:str):
     id=1
@@ -33,6 +34,8 @@ async def add_menu(name:str):
     raise HTTPException(
         status_code=500, detail=f'server error'
     )
+
+#Menghapus Menu
 @app.delete('/menu/{item_id}')
 async def delete_menu(item_id:int):
     for menu_item in data['menu']:
@@ -48,6 +51,7 @@ async def delete_menu(item_id:int):
         status_code=404, detail=f'Item not found'
     )
 
+#Memperbarui Menu
 @app.put('/menu/{item_id}')
 async def update_menu(item_id: int, name:str):
     for menu_item in data['menu']:
