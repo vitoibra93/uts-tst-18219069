@@ -61,7 +61,7 @@ class User(BaseModel):
 class UserInDB(User):
     hashed_password: str
 
-#Definisi Fungsi
+#Mendefinisikan Fungsi Utilitas dan Akses Token
 def verify_password(plain_password, hashed_password):
     return pwd_context.verify(plain_password, hashed_password)
 
